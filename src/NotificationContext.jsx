@@ -1,4 +1,5 @@
-import { createContext, useContext, useReducer } from 'react'
+import { createContext, useReducer } from 'react'
+import PropTypes from 'prop-types'
 
 const notificationReducer = (state = '', action) => {
   switch (action.type) {
@@ -13,7 +14,7 @@ const notificationReducer = (state = '', action) => {
 
 const NotificationContext = createContext()
 
-export const NotificationContextProvider = (props) => {
+export const NotificationContextProvider = ({ children }) => {
   const [notification, notificationDispatch] = useReducer(
     notificationReducer,
     '',
@@ -21,19 +22,13 @@ export const NotificationContextProvider = (props) => {
 
   return (
     <NotificationContext.Provider value={[notification, notificationDispatch]}>
-      {props.children}
+      {children}
     </NotificationContext.Provider>
   )
 }
 
-export const useNotificationValue = () => {
-  const [notification] = useContext(NotificationContext)
-  return notification
-}
-
-export const useNotificationDispatch = () => {
-  const [, notificationDispatch] = useContext(NotificationContext)
-  return notificationDispatch
+NotificationContextProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default NotificationContext
