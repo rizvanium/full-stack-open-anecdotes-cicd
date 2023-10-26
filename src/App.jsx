@@ -53,7 +53,7 @@ const App = () => {
   }
   return (
     <div>
-      <h3>Anecdote app</h3>
+      <h3 className="page-title">Anecdote app</h3>
 
       <Notification />
       <AnecdoteForm />

@@ -9,6 +9,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "server": "json-server -p3001 --watch db.json",
+    "server:test": "json-server -p3001 --watch db-test.json",
     "cypress:run": "cypress run",
     "cypress:open": "cypress open"
   },

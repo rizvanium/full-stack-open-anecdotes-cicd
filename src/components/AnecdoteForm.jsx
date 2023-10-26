@@ -50,10 +50,12 @@ const AnecdoteForm = () => {
 
   return (
     <div>
-      <h3>create new</h3>
+      <h3 className="form-title">create new</h3>
       <form onSubmit={onCreate}>
         <input name="anecdote" />
-        <button type="submit">create</button>
+        <button className="primary-button" type="submit">
+          create
+        </button>
       </form>
     </div>
   )

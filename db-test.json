@@ -1,0 +1,9 @@
+{
+  "anecdotes": [
+    {
+      "content": "Cypress anecdote addition test",
+      "votes": 0,
+      "id": 1
+    }
+  ]
+}
