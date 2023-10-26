@@ -32,8 +32,13 @@
     },
     {
       "content": "Testing new anecdote",
-      "votes": 1,
+      "votes": 2,
       "id": "lfyOmcB"
+    },
+    {
+      "content": "Testing in prod",
+      "votes": 0,
+      "id": "IjJdqKF"
     }
   ]
 }
