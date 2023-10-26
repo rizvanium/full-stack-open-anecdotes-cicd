@@ -1,6 +1,6 @@
 import axios from 'axios'
-const port = import.meta.env.PORT
-
+const port = import.meta.env.VITE_PORT
+console.log('PORT:', import.meta.env.VITE_PORT)
 const baseUrl = `http://localhost:${port}/anecdotes`
 export const getAnecdotes = () => axios.get(baseUrl).then((res) => res.data)
 
