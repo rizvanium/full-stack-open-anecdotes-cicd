@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "prod": "json-server db.json -p3001 --static ./dist",
+    "prod": "json-server db.json --static ./dist",
     "build": "npm install && vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",

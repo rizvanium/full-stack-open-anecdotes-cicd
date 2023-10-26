@@ -5,7 +5,7 @@ export default defineConfig({
     setupNodeEvents() {},
     baseUrl: 'http://localhost:3000',
     env: {
-      BACKEND_URL: 'http://localhost:3001',
+      BACKEND_URL: 'http://localhost:3000',
     },
   },
 })
