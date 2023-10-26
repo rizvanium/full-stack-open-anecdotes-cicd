@@ -1,7 +1,7 @@
 import axios from 'axios'
 const port = import.meta.env.VITE_PORT
 console.log('PORT:', import.meta.env.VITE_PORT)
-const baseUrl = `http://localhost:${port}/anecdotes`
+const baseUrl = `https://cool-unicorn.onrender.com/anecdotes`
 export const getAnecdotes = () => axios.get(baseUrl).then((res) => res.data)
 
 export const createAnecdote = (newAnecdote) =>
