@@ -39,6 +39,11 @@
       "content": "Testing in prod",
       "votes": 1,
       "id": "IjJdqKF"
+    },
+    {
+      "content": "Cypress anecdote addition test",
+      "votes": 0,
+      "id": "aNnaWNg"
     }
   ]
 }

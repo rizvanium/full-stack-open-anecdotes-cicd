@@ -1,6 +1,6 @@
 describe('Apecdote app', () => {
   it('Home page can be visited', () => {
-    cy.visit(import.meta.env.BASE_URL)
+    cy.visit(import.meta.env.VITE_BASE_URL)
 
     const pageTitle = cy.get('.page-title')
     const formTitle = cy.get('.form-title')
@@ -11,7 +11,7 @@ describe('Apecdote app', () => {
 
   it('New anecdote can be added', () => {
     cy.resetDb()
-    cy.visit(import.meta.env.BASE_URL)
+    cy.visit(import.meta.env.VITE_BASE_URL)
     const anecdoteText = 'Cypress anecdote addition test'
     cy.get('input[name="anecdote"]').type(anecdoteText)
     cy.get('.primary-button').first().click()

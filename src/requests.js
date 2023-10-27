@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = `${import.meta.env.BASE_URL}/anecdotes`
+const baseUrl = `${import.meta.env.VITE_BASE_URL}/anecdotes`
 
 export const getAnecdotes = () => axios.get(baseUrl).then((res) => res.data)
 
