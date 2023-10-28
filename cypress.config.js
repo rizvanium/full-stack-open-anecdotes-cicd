@@ -8,6 +8,7 @@ export default defineConfig({
         'file:preprocessor',
         vitePreprocessor({
           configFile: './vite.config.js',
+          mode: 'testing',
         }),
       )
     },
