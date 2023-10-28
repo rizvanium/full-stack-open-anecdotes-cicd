@@ -32,6 +32,7 @@ jobs:
           wait-on: http://localhost:3000
 
   deploy:
+    if: ${{ github.event_name == 'push' && !contains(toJson(github.event.commits.*.message), '#skip') }}
     runs-on: ubuntu-20.04
     needs: [run-pre-deployment-tasks]
     steps:
